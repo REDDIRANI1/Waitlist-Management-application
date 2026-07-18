@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String         @id @default(uuid())
+  email        String         @unique
+  name         String?
+  passwordHash String?        // Null for Google OAuth accounts
+  authMethod   String         // "google" or "credentials"
+  createdAt    DateTime       @default(now())
+  waitlist     WaitlistEntry?
+}
+
+model WaitlistEntry {
+  id             String   @id @default(uuid())
+  userId         String?  @unique
+  user           User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  fullName       String
+  phoneNumber    String   @unique // Normalized 10-digit number
+  email          String   @unique
+  interestReason String
+  useCase        String
+  emailStatus    String   @default("valid")    // "valid", "invalid", "approved"
+  phoneStatus    String   @default("valid")    // "valid", "invalid", "approved"
+  createdAt      DateTime @default(now())
+}
