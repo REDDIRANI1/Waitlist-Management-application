@@ -400,7 +400,7 @@ export default function Apply() {
           </div>
 
           <div className="form-group">
-            <label className="form-label" htmlFor="interestReason">Why are you interested in Antigravity?</label>
+            <label className="form-label" htmlFor="interestReason">Why are you interested in joining?</label>
             <textarea
               id="interestReason"
               placeholder="Tell us about your project, target audience, or why you want early access..."

@@ -3,7 +3,7 @@ import './globals.css';
 import Header from '@/components/Header';
 
 export const metadata: Metadata = {
-  title: 'Antigravity | Early Access Waitlist',
+  title: 'Early Access Waitlist Manager',
   description: 'Apply for early access to the next generation waitlist management application. Beautiful, responsive, and secure.',
 };
 

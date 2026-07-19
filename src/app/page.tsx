@@ -90,7 +90,7 @@ export default function Home() {
 
       {/* Decorative footer */}
       <footer className="footer text-center">
-        <p>&copy; {new Date().getFullYear()} Antigravity. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Waitlist Manager. All rights reserved.</p>
       </footer>
 
       <style jsx>{`

@@ -68,7 +68,7 @@ export default function Header() {
       <nav className="navbar container">
         <Link href="/" className="nav-brand">
           <Landmark className="brand-icon" />
-          <span>Antigravity Waitlist</span>
+          <span>Waitlist Manager</span>
         </Link>
 
         {/* Desktop Navigation */}
