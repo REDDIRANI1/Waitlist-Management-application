@@ -3,7 +3,7 @@
 A secure, mobile-responsive, full-stack Waitlist Management web application built with a modern design system. It allows users to register for early access, validates contact channels, supports dual authentication paths (Google OAuth and Email/Password), and includes a protected Admin Dashboard for managing submissions.
 
 ## Live URL & Source
-- **Live Deployed Application**: [Link to be populated after Vercel deployment]
+- **Live Deployed Application**:  https://waitlist-management-application-854.vercel.app
 - **Repository URL**: `git@github.com:REDDIRANI1/Waitlist-Management-application.git`
 
 ---
