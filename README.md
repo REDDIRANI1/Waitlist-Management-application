@@ -127,3 +127,11 @@ Open `http://localhost:3000` to interact with the application.
 2. Select **Next.js** as the framework template.
 3. Configure all variables listed in `.env` inside Vercel's Environment Variables section.
 4. Vercel automatically runs the build and deploys the full-stack serverless application.
+
+---
+
+## 🧠 Assumptions Made
+- The real-world verification logic relies on `dns` module lookups for MX records, which works reliably in standard Node.js server environments but might face restrictions on edge network deployments unless configured correctly.
+- Users who sign up via Google OAuth are not required to set a password. Their identity is verified by Google.
+- Admin role is exclusively granted to the single email specified in `ADMIN_EMAIL`. We assume only one admin exists for this prototype.
+- Only Indian phone numbers are accepted for this assignment, as per the "+91" restrictions requested.
